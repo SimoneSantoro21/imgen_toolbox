@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imgen_toolbox"
+version = "0.1.0"
+description = "A example Python package"
+readme = "README.md"
+requires-python = ">=3.11"
+
+authors = [
+  { name = "Simone Santoro", email = "simone_santoro21@outlook.it" }
+]
+
+license = { text = "MIT" }
+
+dependencies = [
+  "numpy",
+  "nibabel"
+]
+
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3.11"
+]
+
+[project.urls]
+Homepage = "https://github.com/SimoneSantoro21/imgen_toolbox"
+
+[tool.setuptools.packages.find]
+where = ["."]
